@@ -19,10 +19,13 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
 from django.shortcuts import redirect
+from django.http import HttpResponse
 
+def home(request):
+    return HttpResponse("Voting API is running 🚀")
 urlpatterns = [
     # Root: redirect to API index (change if you want a frontend served here)
-    path('', lambda request: redirect('/api/')),
+    path('', home),
     path('admin/', admin.site.urls),
     path('api/auth/', include('users.urls')),
     path('api/elections/', include('elections.urls')),
