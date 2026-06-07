@@ -1,0 +1,19 @@
+{
+  "welcome": "Welcome to the Voting App",
+  "greeting_user": "Hello, {{name}}!",
+  "change_language": "Change language",
+  "example_text": "This is an example of react-i18next usage.",
+  "login": "Voting System",
+  "email": "Email / Identifier",
+  "password": "Password",
+  "login_button": "Login",
+  "login_error": "Login failed. Please check your credentials.",
+  "nni_label": "NNI",
+  "nni_placeholder": "Enter NNI",
+  "checking": "Checking...",
+  "nni_invalid": "Invalid NNI",
+  "user_not_found": "User not found",
+  "no_account": "Don't have an account?",
+  "register_link": "Register",
+  "logout": "Logout"
+}

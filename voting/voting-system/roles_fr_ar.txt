@@ -1,0 +1,50 @@
+Project roles summary - French and Arabic
+Resume des roles du projet - Francais et Arabe
+
+1. Admin
+Francais:
+- L'administrateur gere le systeme electoral.
+- Il peut creer, modifier, activer, desactiver, fermer et archiver les elections.
+- Il peut acceder aux endpoints d'administration proteges par la permission IsAdmin.
+- Dans le projet, ce role est represente par role = "admin".
+
+Arabe:
+- المدير هو المسؤول عن تسيير النظام الانتخابي.
+- يمكنه إنشاء الانتخابات وتعديلها وتفعيلها وتعطيلها وإغلاقها وأرشفتها.
+- يمكنه الوصول إلى واجهات الإدارة المحمية بـ IsAdmin.
+- داخل المشروع هذا الدور يمثله الحقل role = "admin".
+
+2. Voter
+Francais:
+- Le votant est le citoyen qui utilise la plateforme pour consulter les elections et voter.
+- Il se connecte avec son NNI si ce NNI existe dans CitizenRecord.
+- Il peut consulter les elections visibles et, plus tard, participer au vote.
+- Dans le projet, ce role est represente par role = "voter".
+
+Arabe:
+- المصوت هو المواطن الذي يستعمل المنصة للاطلاع على الانتخابات والتصويت.
+- يسجل الدخول باستعمال NNI إذا كان هذا الرقم موجودا في CitizenRecord.
+- يمكنه رؤية الانتخابات المتاحة، ولاحقا المشاركة في التصويت.
+- داخل المشروع هذا الدور يمثله الحقل role = "voter".
+
+3. Technical distinction in Django
+Francais:
+- is_staff: permet l'acces a Django admin.
+- is_superuser: donne toutes les permissions techniques dans Django.
+- role: represente le role metier dans l'application.
+
+Arabe:
+- is_staff: يسمح بالدخول إلى Django admin.
+- is_superuser: يمنح كل الصلاحيات التقنية داخل Django.
+- role: يمثل الدور الوظيفي داخل التطبيق.
+
+4. Important note
+Francais:
+- Dans ce projet, les roles metier principaux sont seulement deux pour le moment: admin et voter.
+- Un utilisateur peut etre cree automatiquement comme voter apres login avec NNI.
+- Un superuser cree avec Django est considere comme admin dans la logique du projet.
+
+Arabe:
+- في هذا المشروع يوجد حاليا دوران وظيفيان رئيسيان فقط: admin و voter.
+- يمكن إنشاء المستخدم تلقائيا كمصوت بعد تسجيل الدخول بالـ NNI.
+- المستخدم الذي يتم إنشاؤه كـ superuser في Django يعتبر admin في منطق المشروع.

@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-13 22:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: .\candidates\models.py:30
+msgid "تاريخ ميلاد المترشح — مطلوب للتحقق من السن"
+msgstr ""
+
+#: .\candidates\models.py:65
+msgid "لا يمكن إضافة مرشحين بعد بدء الانتخابات"
+msgstr ""
+
+#: .\candidates\models.py:74
+msgid "تاريخ الميلاد غير صحيح"
+msgstr ""
+
+#: .\candidates\serializers.py:41
+msgid "لا يمكن إضافة أو تعديل مرشح بعد بدء الانتخابات"
+msgstr ""
+
+#: .\candidates\services.py:20
+msgid "يوجد مرشح بنفس الاسم في هذه الانتخابات"
+msgstr ""
+
+#: .\candidates\services.py:25
+msgid "لا يمكن تعديل المرشحين بعد بدء الانتخابات"
+msgstr ""
+
+#: .\candidates\services.py:31
+msgid "تاريخ الميلاد مطلوب"
+msgstr ""
+
+#: .\elections\models.py:8
+msgid "رئاسية"
+msgstr ""
+
+#: .\elections\models.py:9
+msgid "برلمانية"
+msgstr ""
+
+#: .\elections\models.py:10
+msgid "بلدية"
+msgstr ""
+
+#: .\elections\models.py:11
+msgid "أخرى"
+msgstr ""
+
+#: .\elections\models.py:24
+msgid "مغلق"
+msgstr ""
+
+#: .\elections\models.py:25
+msgid "مفتوح"
+msgstr ""
+
+#: .\elections\models.py:62
+msgid "نُشرت الانتخابات وأصبحت مرئية للناخبين"
+msgstr ""
+
+#: .\elections\models.py:66
+msgid "أُرشفت الانتخابات يدوياً من قِبل الإدارة"
+msgstr ""
+
+#: .\elections\serializers.py:19
+msgid "لا يمكن أن يكون تاريخ البداية في الماضي"
+msgstr ""
+
+#: .\elections\serializers.py:24
+msgid "يجب أن يكون تاريخ النهاية بعد تاريخ البداية"
+msgstr ""
+
+#: .\elections\serializers.py:29
+msgid "يجب أن يكون تاريخ نهاية التسجيل بعد تاريخ بدايته"
+msgstr ""
+
+#: .\elections\serializers.py:34
+msgid "يجب أن ينتهي التسجيل قبل بداية الانتخابات"
+msgstr ""
+
+#: .\elections\services.py:20
+msgid "لا يمكن تعديل الانتخابات بعد أن تبدأ"
+msgstr ""
+
+#: .\elections\services.py:33
+msgid "لا يمكن حذف الانتخابات بعد أن تبدأ"
+msgstr ""
+
+#: .\elections\services.py:41
+msgid "الانتخابات منشورة مسبقاً"
+msgstr ""
+
+#: .\elections\services.py:44
+msgid "لا يمكن تفعيل انتخابات مؤرشفة"
+msgstr ""
+
+#: .\elections\services.py:47
+msgid "لا يوجد مرشحون في هذه الانتخابات"
+msgstr ""
+
+#: .\elections\services.py:50
+msgid "انتهت مدة هذه الانتخابات"
+msgstr ""
+
+#: .\elections\services.py:61
+msgid "الانتخابات مؤرشفة مسبقاً"
+msgstr ""
+
+#: .\elections\services.py:72
+msgid "الانتخابات ليست مؤرشفة"
+msgstr ""
+
+#: .\elections\services.py:107
+msgid "لا يمكن حذف حزب مشارك في انتخابات نشطة أو مجدولة"
+msgstr ""
+
+#: .\elections\views.py:121
+msgid "غير متاح"
+msgstr ""
+
+#: .\elections\views.py:138
+msgid "هذه الانتخابات غير متاحة"
+msgstr ""
+
+#: .\elections\views.py:143
+msgid "التسجيل مغلق حالياً"
+msgstr ""
+
+#: .\elections\views.py:146
+msgid "أنت مسجّل بالفعل في هذه الانتخابات"
+msgstr ""
+
+#: .\elections\views.py:149
+msgid "تم التسجيل بنجاح"
+msgstr ""
+
+#: .\elections\views.py:160
+msgid "النتائج غير متاحة بعد"
+msgstr ""
+
+#: .\users\permissions.py:7
+msgid "Only admins can perform this action."
+msgstr ""
+
+#: .\users\permissions.py:18
+msgid "Only voters can perform this action."
+msgstr ""
+
+#: .\users\serializers.py:12
+msgid "NNI must contain only digits."
+msgstr ""
+
+#: .\users\services.py:33
+msgid "No citizen was found with this NNI."
+msgstr ""
+
+#: .\users\services.py:36
+msgid "This citizen is not allowed to access the platform."
+msgstr ""
+
+#: .\users\services.py:53
+msgid "This user account is disabled."
+msgstr ""
+
+#: .\votes\models.py:51
+msgid "هذا المرشح لا ينتمي لهذه الانتخابات"
+msgstr ""
+
+#: .\votes\services.py:17
+msgid "يجب تسجيل تاريخ الميلاد قبل التصويت"
+msgstr ""
+
+#: .\votes\services.py:22
+#, python-brace-format
+msgid "يجب أن لا يقل عمر الناخب عن 18 سنة (عمرك الحالي: {age} سنة)"
+msgstr ""
+
+#: .\votes\services.py:29
+msgid "يجب التسجيل في هذه الانتخابات أولاً قبل التصويت"
+msgstr ""
+
+#: .\votes\services.py:40
+msgid "التصويت غير متاح حالياً"
+msgstr ""
+
+#: .\votes\services.py:49
+msgid "المرشح غير موجود"
+msgstr ""
+
+#: .\votes\services.py:52
+msgid "المرشح لا ينتمي لهذه الانتخابات"
+msgstr ""
+
+#: .\votes\services.py:55
+msgid "لقد صوّت مسبقاً في هذه الانتخابات"
+msgstr ""
