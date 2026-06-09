@@ -100,9 +100,21 @@ MIDDLEWARE = [
 ]
 # CORS configuration: explicit list required in production
 CORS_ALLOW_ALL_ORIGINS = False
-CORS_ALLOWED_ORIGINS = env_list(
-    "CORS_ALLOWED_ORIGINS", default=["http://localhost:3000", "http://localhost:5173", "https://voting-repo-eta.vercel.app"]
-)
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://voting-repo-eta.vercel.app",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+from corsheaders.defaults import default_headers
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "authorization",
+    "content-type",
+]
 # Allow credentials (cookies) when explicitly enabled via env. Default: False.
 CORS_ALLOW_CREDENTIALS = env_bool("CORS_ALLOW_CREDENTIALS", default=False)
 
