@@ -88,8 +88,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
      'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -103,6 +103,15 @@ CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = env_list(
     "CORS_ALLOWED_ORIGINS", default=["http://localhost:3000", "http://localhost:5173", "https://voting-repo-eta.vercel.app"]
 )
+# Allow credentials (cookies) when explicitly enabled via env. Default: False.
+CORS_ALLOW_CREDENTIALS = env_bool("CORS_ALLOW_CREDENTIALS", default=False)
+
+# Ensure Authorization header is allowed in CORS preflight
+try:
+    from corsheaders.defaults import default_headers
+    CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
+except Exception:
+    CORS_ALLOW_HEADERS = ["authorization", "content-type", "accept", "origin", "user-agent"]
 if IS_PRODUCTION:
     # Disallow permissive CORS in production
     if env_bool("CORS_ALLOW_ALL_ORIGINS", default=False):
