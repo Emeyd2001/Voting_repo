@@ -101,7 +101,7 @@ MIDDLEWARE = [
 # CORS configuration: explicit list required in production
 CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOWED_ORIGINS = env_list(
-    "CORS_ALLOWED_ORIGINS", default=["http://localhost:3000", "http://localhost:5173", "https://voting-system-frontend.vercel.app"]
+    "CORS_ALLOWED_ORIGINS", default=["http://localhost:3000", "http://localhost:5173", "https://voting-repo-eta.vercel.app"]
 )
 if IS_PRODUCTION:
     # Disallow permissive CORS in production
