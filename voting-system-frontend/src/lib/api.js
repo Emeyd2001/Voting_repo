@@ -1,7 +1,6 @@
 import axios from "axios";
-import i18n from '../i18n';
-
-const API_BASE_URL = "/api";
+import i18n from "../i18n";
+import { API_BASE_URL } from "./config";
 
 // Set up Axios instance
 const api = axios.create({

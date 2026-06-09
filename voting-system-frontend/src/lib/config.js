@@ -1,12 +1,26 @@
 
+const normalize = (raw) => {
+  if (!raw) return raw;
+  let v = String(raw).trim();
+  // remove trailing slash
+  if (v.endsWith("/")) v = v.slice(0, -1);
+  // ensure API base contains /api
+  if (!v.endsWith("/api")) v = v + "/api";
+  return v;
+};
+
 const getApiUrl = () => {
-  if (import.meta.env.VITE_API_URL) return import.meta.env.VITE_API_URL;
+  const raw = import.meta.env.VITE_API_URL;
+  if (raw) return normalize(raw);
   const host = window.location.hostname;
   return `http://${host}:8000/api`;
 };
 
 const getMediaUrl = () => {
-  if (import.meta.env.VITE_MEDIA_URL) return import.meta.env.VITE_MEDIA_URL;
+  const raw = import.meta.env.VITE_MEDIA_URL;
+  if (raw) {
+    return String(raw).trim().replace(/\/+$/, "");
+  }
   const host = window.location.hostname;
   return `http://${host}:8000`;
 };
