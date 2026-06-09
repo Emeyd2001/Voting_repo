@@ -2,8 +2,12 @@
 const normalize = (raw) => {
   if (!raw) return raw;
   let v = String(raw).trim();
-  // remove trailing slash
-  if (v.endsWith("/")) v = v.slice(0, -1);
+  // ensure protocol is present (default to https)
+  if (!/^https?:\/\//i.test(v)) {
+    v = `https://${v}`;
+  }
+  // remove trailing slash(s)
+  v = v.replace(/\/+$/g, "");
   // ensure API base contains /api
   if (!v.endsWith("/api")) v = v + "/api";
   return v;
