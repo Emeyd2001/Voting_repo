@@ -115,21 +115,21 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
     "authorization",
     "content-type",
 ]
-# Allow credentials (cookies) when explicitly enabled via env. Default: False.
-CORS_ALLOW_CREDENTIALS = env_bool("CORS_ALLOW_CREDENTIALS", default=False)
+# # Allow credentials (cookies) when explicitly enabled via env. Default: False.
+# CORS_ALLOW_CREDENTIALS = env_bool("CORS_ALLOW_CREDENTIALS", default=False)
 
-# Ensure Authorization header is allowed in CORS preflight
-try:
-    from corsheaders.defaults import default_headers
-    CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
-except Exception:
-    CORS_ALLOW_HEADERS = ["authorization", "content-type", "accept", "origin", "user-agent"]
-if IS_PRODUCTION:
-    # Disallow permissive CORS in production
-    if env_bool("CORS_ALLOW_ALL_ORIGINS", default=False):
-        raise RuntimeError("Do not enable CORS_ALLOW_ALL_ORIGINS in production. Set CORS_ALLOWED_ORIGINS explicitly.")
-    if not CORS_ALLOWED_ORIGINS:
-        raise RuntimeError("CORS_ALLOWED_ORIGINS must be set in production environment")
+# # Ensure Authorization header is allowed in CORS preflight
+# try:
+#     from corsheaders.defaults import default_headers
+#     CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
+# except Exception:
+#     CORS_ALLOW_HEADERS = ["authorization", "content-type", "accept", "origin", "user-agent"]
+# if IS_PRODUCTION:
+#     # Disallow permissive CORS in production
+#     if env_bool("CORS_ALLOW_ALL_ORIGINS", default=False):
+#         raise RuntimeError("Do not enable CORS_ALLOW_ALL_ORIGINS in production. Set CORS_ALLOWED_ORIGINS explicitly.")
+#     if not CORS_ALLOWED_ORIGINS:
+#         raise RuntimeError("CORS_ALLOWED_ORIGINS must be set in production environment")
 
 ROOT_URLCONF = 'config.urls'
 
