@@ -1,8 +1,10 @@
 import { Bell, Search, Settings, Menu } from "lucide-react";
 import { useAuthStore } from "../../store/authStore";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar({ onMenuClick }) {
   const user = useAuthStore((s) => s.user);
+  const { t } = useTranslation();
 
   return (
     <header className="flex h-[60px] shrink-0 items-center gap-4 border-b border-zinc-100 bg-white/80 backdrop-blur-md px-6 shadow-[0px_12px_32px_rgba(0,0,0,0.04)] sticky top-0 z-40">
@@ -16,7 +18,7 @@ export default function Navbar({ onMenuClick }) {
 
       {/* Brand name */}
       <span className="text-[15px] font-black text-emerald-800">
-        نظام الانتخابات الوطنية
+        {t("auth.pageTitle")}
       </span>
 
       {/* Search - desktop */}
@@ -24,7 +26,7 @@ export default function Navbar({ onMenuClick }) {
         <Search className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
         <input
           type="text"
-          placeholder="بحث..."
+          placeholder={t("nav.searchPlaceholder")}
           className="h-9 w-full rounded-full border-none bg-surface-container-highest px-4 pr-9 text-sm outline-none transition-all placeholder:text-zinc-400 focus:ring-2 focus:ring-primary/20"
           dir="rtl"
         />
@@ -51,7 +53,7 @@ export default function Navbar({ onMenuClick }) {
                 {user.name}
               </p>
               <p className="text-[10px] text-secondary">
-                {user.title ?? "المسؤول العام"}
+                {user.title ?? t("nav.adminRole")}
               </p>
             </div>
             <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-container text-xs font-bold text-white border border-outline-variant/20">

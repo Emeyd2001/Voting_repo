@@ -33,7 +33,7 @@ export default function VoterLayout() {
             </div>
             <div className="hidden sm:block">
               <span className="text-sm font-bold text-white leading-tight">
-                نظام الانتخابات الوطنية
+                {t("auth.pageTitle")}
               </span>
             </div>
           </div>
@@ -62,13 +62,13 @@ export default function VoterLayout() {
             {user && (
               <div className="flex items-center gap-2">
                 <div className="hidden text-right md:block">
-                  <p className="text-xs font-bold leading-tight text-white">
-                    {user?.full_name || user?.nni || "ناخب"}
-                  </p>
-                  <p className="text-[10px] text-white/70">ناخب مسجل</p>
+                    <p className="text-xs font-bold leading-tight text-white">
+                      {user?.full_name || user?.nni || t("voter.defaultName")}
+                    </p>
+                    <p className="text-[10px] text-white/70">{t("voter.registeredVoter")}</p>
                 </div>
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-xs font-bold text-white">
-                  {(user?.full_name || user?.nni || "ن").charAt(0)}
+                  {(user?.full_name || user?.nni || t("voter.defaultName")).charAt(0)}
                 </div>
               </div>
             )}
