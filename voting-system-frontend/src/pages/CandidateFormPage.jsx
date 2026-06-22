@@ -151,7 +151,7 @@ export default function CandidateFormPage() {
               <p className="mt-0.5 text-xs text-secondary mb-3">{form.full_name || t("candidates.noName")}</p>
               <label className="inline-flex items-center justify-center gap-1.5 w-full px-4 py-2 bg-surface hover:bg-surface-container-low border border-outline-variant rounded-xl cursor-pointer transition-colors shadow-sm">
                 <User className="h-4 w-4 text-primary" />
-                <span className="text-xs font-bold text-primary">تحميل الصورة</span>
+                <span className="text-xs font-bold text-primary">{t("candidates.uploadImage")}</span>
                 <input
                   type="file"
                   accept="image/*"

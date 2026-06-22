@@ -9,7 +9,9 @@
     "search": "Rechercher",
     "viewAll": "Voir tout",
     "yes": "Oui",
-    "no": "Non"
+    "no": "Non",
+    "unexpectedError": "Une erreur inattendue s'est produite",
+    "occurredError": "Une erreur est survenue"
   },
   "common_extra": {
     "logoutTitle": "Déconnexion",

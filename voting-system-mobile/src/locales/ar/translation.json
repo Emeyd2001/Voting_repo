@@ -9,7 +9,9 @@
     "search": "بحث",
     "viewAll": "عرض الكل",
     "yes": "نعم",
-    "no": "لا"
+    "no": "لا",
+    "unexpectedError": "حدث خطأ غير متوقع",
+    "occurredError": "حدث خطأ"
   },
   "common_extra": {
     "logoutTitle": "تسجيل الخروج",

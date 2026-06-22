@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95b0602b-fb1d-44bc-9bfe-fee3f399235c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/voting-system-frontend/src/components/VoteModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/voting-system-frontend/src/components/VoteModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting-system-frontend/src/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/voting-system-frontend/src/components/layout/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/voting-system-frontend/src/components/layout/VoterLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/voting-system-frontend/src/components/layout/VoterLayout.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="95b0602b-fb1d-44bc-9bfe-fee3f399235c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

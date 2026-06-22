@@ -1,21 +1,24 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 import { AlertTriangle } from "lucide-react-native";
+import { useTranslation } from "react-i18next";
 import { Colors, Shadows } from "../../theme/colors";
 
 export function ErrorState({ error, onRetry }) {
+  const { t } = useTranslation();
   const message =
-    error?.message || error?.toString() || "حدث خطأ غير متوقع";
+    error?.message || error?.toString() || t("common.unexpectedError");
+
   return (
     <View style={styles.container}>
       <View style={styles.iconWrap}>
         <AlertTriangle size={32} color={Colors.warning} />
       </View>
-      <Text style={styles.title}>حدث خطأ</Text>
+      <Text style={styles.title}>{t("common.occurredError")}</Text>
       <Text style={styles.message}>{message}</Text>
       {onRetry && (
         <Pressable style={styles.btn} onPress={onRetry}>
-          <Text style={styles.btnText}>إعادة المحاولة</Text>
+          <Text style={styles.btnText}>{t("common.retry")}</Text>
         </Pressable>
       )}
     </View>

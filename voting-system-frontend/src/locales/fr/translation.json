@@ -224,7 +224,8 @@
     "genderField": "Genre",
     "genderHelp": "Définir le genre du candidat.",
     "dateOfBirthField": "Date de naissance",
-    "dateOfBirthHelp": "Date de naissance du candidat — requise pour la vérification de l'âge."
+    "dateOfBirthHelp": "Date de naissance du candidat — requise pour la vérification de l'âge.",
+    "uploadImage": "Téléverser l'image"
   },
 
   "parties": {
@@ -265,7 +266,8 @@
     "legalNoticeText": "L'enregistrement des partis est régi par la loi n° 2012-024.",
     "fullNameField": "Nom complet du parti *",
     "namePlaceholderFull": "Ex : Union Pour la République",
-    "foundedYearField": "Année de fondation"
+    "foundedYearField": "Année de fondation",
+    "uploadLogo": "Téléverser le logo"
   },
 
   "users": {

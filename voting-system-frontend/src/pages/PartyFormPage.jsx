@@ -133,7 +133,7 @@ export default function PartyFormPage() {
               <p className="mt-0.5 text-xs text-secondary mb-3">{t("parties.colorUsage")}</p>
               <label className="inline-flex items-center justify-center gap-1.5 w-full px-4 py-2 bg-surface hover:bg-surface-container-low border border-outline-variant rounded-xl cursor-pointer transition-colors shadow-sm">
                 <Building2 className="h-4 w-4 text-primary" />
-                <span className="text-xs font-bold text-primary">تحميل الشعار</span>
+                <span className="text-xs font-bold text-primary">{t("parties.uploadLogo")}</span>
                 <input
                   type="file"
                   accept="image/*"

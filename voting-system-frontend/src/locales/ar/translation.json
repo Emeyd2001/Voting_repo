@@ -224,7 +224,8 @@
     "genderField": "الجنس",
     "genderHelp": "تحديد جنس المترشح.",
     "dateOfBirthField": "تاريخ الميلاد",
-    "dateOfBirthHelp": "تاريخ ميلاد المترشح — مطلوب للتحقق من السن."
+    "dateOfBirthHelp": "تاريخ ميلاد المترشح — مطلوب للتحقق من السن.",
+    "uploadImage": "تحميل الصورة"
   },
 
   "parties": {
@@ -265,7 +266,8 @@
     "legalNoticeText": "تسجيل الأحزاب خاضع للقانون رقم 2012-024.",
     "fullNameField": "اسم الحزب الكامل *",
     "namePlaceholderFull": "مثال: حزب الاتحاد من أجل الجمهورية",
-    "foundedYearField": "سنة التأسيس"
+    "foundedYearField": "سنة التأسيس",
+    "uploadLogo": "تحميل الشعار"
   },
 
   "users": {
