@@ -4,7 +4,7 @@
     "slug": "voting-system-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Icon.jpeg",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "scheme": "votingapp",
     "plugins": [
