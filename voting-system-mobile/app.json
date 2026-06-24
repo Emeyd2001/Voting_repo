@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "voting-system-mobile",
+    "name": "Mourivote",
     "slug": "voting-system-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Icon.jpeg",
     "userInterfaceStyle": "light",
     "scheme": "votingapp",
     "plugins": [
@@ -26,12 +26,6 @@
       "bundleIdentifier": "mr.gov.elections.mobile"
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F5EE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
       "package": "mr.gov.elections.mobile"
     },
     "web": {
@@ -40,6 +34,12 @@
     },
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "99e6d649-2935-4364-9bf9-3e4aa9c69b8a"
+      }
     }
   }
 }
